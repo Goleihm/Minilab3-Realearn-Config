@@ -1,0 +1,642 @@
+{
+    kind = "MainCompartment",
+    version = "2.18.0",
+    value = {
+        groups = {
+            {
+                id = "ysAH5UwKf_hTqBkm5NAJh",
+                name = "Black Enc",
+            },
+            {
+                id = "1locDHCzIuitaPveVutFK",
+                name = "Transport Control",
+            },
+            {
+                id = "DxJTAVCyl90hB1BRtydMW",
+                name = "Knobs (base)",
+            },
+            {
+                id = "TdfOZ-Bug24XScc1hGFJR",
+                name = "Track Faders",
+            },
+        },
+        mappings = {
+            {
+                id = "_mCoB4i-5p4lbUrepstgX",
+                name = "Recent FX Envelope(prog redo)",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 42,
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 41142,
+                    track = {
+                        address = "Selected",
+                    },
+                },
+            },
+            {
+                id = "4636T0xLWaZimhTWSoQGI",
+                name = "Close FX Envelope(prog redo)",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 40,
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    encoder_filter = "DecrementOnly",
+                    fire_mode = {
+                        kind = "OnDoublePress",
+                    },
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 41150,
+                    track = {
+                        address = "Selected",
+                    },
+                },
+            },
+            {
+                id = "2CiFUTUCmf3EVvTv_v30z",
+                name = "All Track Envelopes(prog redo)",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 40,
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    encoder_filter = "IncrementOnly",
+                    fire_mode = {
+                        kind = "AfterTimeout",
+                        timeout = 400,
+                    },
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 40888,
+                    track = {
+                        address = "Selected",
+                    },
+                },
+            },
+            {
+                id = "a5fUVQZdBRPm3cgrgJ8DP",
+                name = "Arm/Disarm",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 16,
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                },
+                target = {
+                    kind = "TrackArmState",
+                    track = {
+                        address = "Selected",
+                    },
+                },
+            },
+            {
+                id = "gVM4aguVb5PnNpKgd_ad9",
+                name = "Dock Window",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 17,
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                    fire_mode = {
+                        kind = "OnSinglePress",
+                        max_duration = 450,
+                    },
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 41172,
+                },
+            },
+            {
+                id = "0mYxdvrXDpE3zajLh64Fs",
+                name = "Docker Toggle",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 17,
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                    fire_mode = {
+                        kind = "AfterTimeout",
+                        timeout = 400,
+                    },
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 40279,
+                },
+            },
+            {
+                id = "ysBxivxmPZAsqnOLE_Vj1",
+                name = "Track Browse",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 38,
+                },
+                glue = {
+                    step_size_interval = {0.29, 0.29},
+                    relative_mode = "MakeAbsolute",
+                },
+                target = {
+                    kind = "BrowseTracks",
+                },
+            },
+            {
+                id = "GFITrBJZJo-dW4__se7_c",
+                name = "Docker Browse (up)",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 39,
+                },
+                glue = {
+                    step_size_interval = {0.29, 0.29},
+                    encoder_filter = "IncrementOnly",
+                    relative_mode = "MakeAbsolute",
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 41624,
+                },
+            },
+            {
+                id = "3Rritj8e_mlkELcZtXirX",
+                name = "Docker Browse (down)",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 39,
+                },
+                glue = {
+                    step_size_interval = {0.29, 0.29},
+                    encoder_filter = "DecrementOnly",
+                    relative_mode = "MakeAbsolute",
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 41625,
+                },
+            },
+            {
+                id = "9k4do_NdWUp_3OK_LRowt",
+                name = "Repeat (Loop)",
+                group = "1locDHCzIuitaPveVutFK",
+                source = {
+                    kind = "Virtual",
+                    id = "cycle",
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                },
+                target = {
+                    kind = "TransportAction",
+                    action = "Repeat",
+                },
+            },
+            {
+                id = "2PxTSQIwp71OVVGchPoWJ",
+                name = "Home (Double Press)",
+                group = "1locDHCzIuitaPveVutFK",
+                source = {
+                    kind = "Virtual",
+                    id = "stop",
+                    character = "Button",
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                    fire_mode = {
+                        kind = "OnDoublePress",
+                    },
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 40042,
+                },
+            },
+            {
+                id = "Cj0aLbeLue15yVZpLjJGZ",
+                name = "Stop (here)",
+                group = "1locDHCzIuitaPveVutFK",
+                source = {
+                    kind = "Virtual",
+                    id = "stop",
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                },
+                target = {
+                    kind = "TransportAction",
+                    action = "PlayStop",
+                },
+            },
+            {
+                id = "gJdrOYnWhTlE_kKP_utOB",
+                name = "Play/Stop",
+                group = "1locDHCzIuitaPveVutFK",
+                source = {
+                    kind = "Virtual",
+                    id = "play",
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                },
+                target = {
+                    kind = "TransportAction",
+                    action = "PlayPause",
+                },
+            },
+            {
+                id = "uqu1aCgiGVcDdwDykHo1N",
+                name = "Record (Active)",
+                group = "1locDHCzIuitaPveVutFK",
+                source = {
+                    kind = "Virtual",
+                    id = "record",
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                },
+                target = {
+                    kind = "TransportAction",
+                    action = "Record",
+                },
+            },
+            {
+                id = "-Kehfg4bQQZ-66o24IUZH",
+                name = "Record (Retro)",
+                group = "1locDHCzIuitaPveVutFK",
+                source = {
+                    kind = "Virtual",
+                    id = "record",
+                    character = "Button",
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                    fire_mode = {
+                        kind = "OnDoublePress",
+                    },
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 40211,
+                },
+            },
+            {
+                id = "uPiZllnC-L5qYrKOZzRa8",
+                name = "Encoder 1",
+                group = "DxJTAVCyl90hB1BRtydMW",
+                source = {
+                    kind = "Virtual",
+                    id = 0,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "ByIndex",
+                            chain = {
+                                address = "Track",
+                            },
+                            index = 0,
+                        },
+                        index = 0,
+                    },
+                },
+            },
+            {
+                id = "mt8pGfOQ9yaolkKpuA-Mm",
+                name = "Encoder 2",
+                group = "DxJTAVCyl90hB1BRtydMW",
+                source = {
+                    kind = "Virtual",
+                    id = 1,
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "Dummy",
+                },
+            },
+            {
+                id = "XZaxtqx-Gm_wLQ9ozrQYC",
+                name = "Encoder 3",
+                group = "DxJTAVCyl90hB1BRtydMW",
+                source = {
+                    kind = "Virtual",
+                    id = 2,
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "Dummy",
+                },
+            },
+            {
+                id = "voZkuxCzDq2JUoXz7tru5",
+                name = "Encoder 4",
+                group = "DxJTAVCyl90hB1BRtydMW",
+                source = {
+                    kind = "Virtual",
+                    id = 3,
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "Dummy",
+                },
+            },
+            {
+                id = "XA-WSm98_E_-fmZPr1K8c",
+                name = "Encoder 5",
+                group = "DxJTAVCyl90hB1BRtydMW",
+                source = {
+                    kind = "Virtual",
+                    id = 4,
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "ByIndex",
+                            chain = {
+                                address = "Track",
+                            },
+                            index = 0,
+                        },
+                        index = 2,
+                    },
+                },
+            },
+            {
+                id = "4ftWJdhpp7Bc3-V3M2fzc",
+                name = "Encoder 6",
+                group = "DxJTAVCyl90hB1BRtydMW",
+                source = {
+                    kind = "Virtual",
+                    id = 5,
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "Dummy",
+                },
+            },
+            {
+                id = "xuwSsQe7R0oVP3dMd1FX3",
+                name = "Encoder 7",
+                group = "DxJTAVCyl90hB1BRtydMW",
+                source = {
+                    kind = "Virtual",
+                    id = 6,
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "Dummy",
+                },
+            },
+            {
+                id = "cp5U4TIEM6jHK3YLkcvkF",
+                name = "Encoder 8",
+                group = "DxJTAVCyl90hB1BRtydMW",
+                source = {
+                    kind = "Virtual",
+                    id = 7,
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "Dummy",
+                },
+            },
+            {
+                id = "wM_Ucb-7_piScF9-8a2vs",
+                name = "Volume",
+                group = "TdfOZ-Bug24XScc1hGFJR",
+                source = {
+                    kind = "Virtual",
+                    id = 34,
+                },
+                glue = {
+                    target_interval = {0, 0.716},
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "TrackVolume",
+                    track = {
+                        address = "Selected",
+                    },
+                },
+            },
+            {
+                id = "htO5K_2Uz0t3UVD5yN8nz",
+                name = "Width",
+                group = "TdfOZ-Bug24XScc1hGFJR",
+                source = {
+                    kind = "Virtual",
+                    id = 35,
+                },
+                glue = {
+                    reverse = true,
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "TrackWidth",
+                    track = {
+                        address = "Selected",
+                    },
+                },
+            },
+            {
+                id = "dhPfGUVnURK1Z6azB2Bqh",
+                name = "Pan",
+                group = "TdfOZ-Bug24XScc1hGFJR",
+                source = {
+                    kind = "Virtual",
+                    id = 36,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "TrackPan",
+                    track = {
+                        address = "Selected",
+                    },
+                },
+            },
+            {
+                id = "q2q1dfQRud4qROUwQhaO8",
+                name = "Clear Envelope",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 43,
+                    character = "Button",
+                },
+                glue = {
+                    step_size_interval = {0.01, 0.05},
+                    fire_mode = {
+                        kind = "AfterTimeout",
+                        timeout = 1000,
+                    },
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 40065,
+                },
+            },
+            {
+                id = "9-RRcKuZNfDncU_c8gtGt",
+                name = "FX Browse",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 41,
+                },
+                glue = {
+                    step_size_interval = {0.29, 0.29},
+                    relative_mode = "MakeAbsolute",
+                },
+                target = {
+                    kind = "BrowseFxChain",
+                    chain = {
+                        address = "Track",
+                        track = {
+                            address = "Selected",
+                        },
+                    },
+                },
+            },
+            {
+                id = "IXrsLJK8I2HaTD65YXNuo",
+                name = "Add Fx",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 43,
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 40271,
+                },
+            },
+            {
+                id = "TqtA7W_GA-7yA2WikEXWP",
+                name = "Add Instrument on New Track",
+                group = "ysAH5UwKf_hTqBkm5NAJh",
+                source = {
+                    kind = "Virtual",
+                    id = 43,
+                    character = "Button",
+                },
+                glue = {
+                    absolute_mode = "ToggleButton",
+                    step_size_interval = {0.01, 0.05},
+                    fire_mode = {
+                        kind = "OnDoublePress",
+                    },
+                },
+                target = {
+                    kind = "ReaperAction",
+                    command = 40701,
+                },
+            },
+            {
+                id = "BlK8oGmMg2Bb0R5QQN4v3",
+                name = "Send Track (Name Receiver \'R1\')",
+                group = "TdfOZ-Bug24XScc1hGFJR",
+                source = {
+                    kind = "Virtual",
+                    id = 37,
+                },
+                glue = {
+                    target_interval = {0, 0.716},
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "RouteVolume",
+                    route = {
+                        address = "ByName",
+                        track = {
+                            address = "Selected",
+                        },
+                        name = "R1",
+                    },
+                },
+            },
+        },
+    },
+}

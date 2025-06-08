@@ -1,0 +1,284 @@
+{
+    kind = "MainCompartment",
+    version = "2.18.0",
+    value = {
+        mappings = {
+            {
+                id = "Mva0xT77SgtchwG1bFR4l",
+                name = "EQ 1 vol",
+                source = {
+                    kind = "Virtual",
+                    id = 44,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 1,
+                    },
+                },
+            },
+            {
+                id = "o1M5wLHBEvxzxuNFL_fl8",
+                name = "EQ 2 vol",
+                source = {
+                    kind = "Virtual",
+                    id = 45,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 4,
+                    },
+                },
+            },
+            {
+                id = "j4pADdf4N_nZbVDZVF6Ld",
+                name = "EQ 3 vol",
+                source = {
+                    kind = "Virtual",
+                    id = 46,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 7,
+                    },
+                },
+            },
+            {
+                id = "8cm46MquYwOGpDC_X7vfp",
+                name = "EQ 4 vol",
+                source = {
+                    kind = "Virtual",
+                    id = 47,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 10,
+                    },
+                },
+            },
+            {
+                id = "-qEAF0AjfAHoFHf7jNSIT",
+                name = "Encoder 1",
+                source = {
+                    kind = "Virtual",
+                    id = 8,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 0,
+                    },
+                },
+            },
+            {
+                id = "3a3SWHSkq3Z2eCLkX_2pp",
+                name = "Encoder 2",
+                source = {
+                    kind = "Virtual",
+                    id = 9,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 3,
+                    },
+                },
+            },
+            {
+                id = "AlfbRWjRqNSBvlgccD_hc",
+                name = "Encoder 3",
+                source = {
+                    kind = "Virtual",
+                    id = 10,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 6,
+                    },
+                },
+            },
+            {
+                id = "RK1C25x20l0p0PKLzyveU",
+                name = "Encoder 4",
+                source = {
+                    kind = "Virtual",
+                    id = 11,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 9,
+                    },
+                },
+            },
+            {
+                id = "Qq-BavH18y-U8DGZ9J_Hy",
+                name = "Encoder 5",
+                source = {
+                    kind = "Virtual",
+                    id = 12,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 2,
+                    },
+                },
+            },
+            {
+                id = "jm5aLQbtq4tvbHDNFVNEi",
+                name = "Encoder 6",
+                source = {
+                    kind = "Virtual",
+                    id = 13,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 5,
+                    },
+                },
+            },
+            {
+                id = "9cJx-lPzPD1iTy5wpbVp8",
+                name = "Encoder 7",
+                source = {
+                    kind = "Virtual",
+                    id = 14,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 8,
+                    },
+                },
+            },
+            {
+                id = "sU3n_jkZHjk7PrPl1nRHA",
+                name = "Encoder 8",
+                source = {
+                    kind = "Virtual",
+                    id = 15,
+                },
+                glue = {
+                    takeover_mode = "PickUp",
+                    step_size_interval = {0.01, 0.05},
+                    step_factor_interval = {1, 5},
+                },
+                target = {
+                    kind = "FxParameterValue",
+                    parameter = {
+                        address = "ById",
+                        fx = {
+                            address = "Instance",
+                        },
+                        index = 11,
+                    },
+                },
+            },
+        },
+    },
+}
