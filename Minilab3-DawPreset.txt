@@ -162,7 +162,7 @@
                     id = 38,
                 },
                 glue = {
-                    step_size_interval = {0.29, 0.29},
+                    step_size_interval = {0.07, 0.09},
                     relative_mode = "MakeAbsolute",
                 },
                 target = {
@@ -292,6 +292,11 @@
                 glue = {
                     absolute_mode = "ToggleButton",
                     step_size_interval = {0.01, 0.05},
+                    fire_mode = {
+                        kind = "AfterTimeoutKeepFiring",
+                        timeout = 600,
+                        rate = nil,
+                    },
                 },
                 target = {
                     kind = "TransportAction",
